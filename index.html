@@ -29,9 +29,9 @@
     <!-- using titlebar logo -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
-<header class="container max-w-6xl mx-auto my-10">
+<header class="container max-w-6xl mx-auto my-10 ">
     <!-- navbar section started -->
-    <div class="flex justify-around items-center bg-rose-500 rounded-full p-4">
+    <div class="flex justify-around items-center bg-rose-500 rounded-full p-4 flex-col lg:flex-row gap-3">
         <div class="font-normal text-sm text-white">
             <ul class="flex gap-4">
                 <li><a href="">Home</a></li>
@@ -52,6 +52,7 @@
         </div>
     </div>
     <!-- navbar section ended -->
+    <!-- slier banner section started -->
     <section class="container max-w-6xl mx-auto my-10">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
@@ -83,19 +84,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="bg-slate-600 shadow-xl image-full">
-            <div class="-mt-96 text-center text-white">
-                <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                <p class="m-8">We supply highly quality organic products</p>
-                <div class="card-actions justify-center">
-                    <button class="btn bg-rose-500 border-none text-white">Shop Now</button>
-                </div>
-            </div>
-        </div> -->
-
         <!-- card section started -->
-        <div class="flex flex-col lg:flex-row mx-auto justify-center -mt-20 shadow-xl bg-fuchsia-50">
+        <div class="flex flex-col lg:flex-row items-center p-10 -mt-20 shadow-xl mx-auto justify-center">
             <div class="card rounded rounded-l-xl card-compact w-48 bg-base-100 items-center p-5">
                 <figure><img src="/images/fruit1.png" alt="fruit" /></figure>
                 <h2 class="text-normal">Red Grapes</h2>
@@ -118,10 +108,12 @@
             </div>
         </div>
     </section>
+    <!-- slier banner section ended -->
 </header>
 <main>
     <!-- title with timer section started -->
-    <section class="container max-w-6xl mx-auto my-20 flex justify-between">
+    <section
+        class="container max-w-6xl mx-auto my-20 flex justify-between flex-col gap-10 items-center text-center lg:flex-row ">
         <div class="">
             <h1 class="text-3xl font-bold">Deal of the day</h1>
             <p class="text-sm max-w-xl mt-2">Contrary to popular belief, is not simply random text. It has roots in a
@@ -160,7 +152,7 @@
     <!-- title with timer section ended -->
 
     <!-- feature products section started -->
-    <section class="container max-w-6xl mx-auto my-20 flex justify-between">
+    <section class="container max-w-6xl mx-auto my-20 flex justify-between flex-col lg:flex-row gap-10 items-center">
         <!-- modal 1 -->
         <div class="card card-compact shadow-xl w-48 bg-base-100 items-center p-5">
             <figure><img src="/images/fruit6.png" alt="fruit" /></figure>
@@ -318,7 +310,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- shop all button -->
     <section class="container max-w-6xl mx-auto my-20 text-center">
         <button class="btn bg-red-500 text-white">Shop All</button>
@@ -326,65 +318,66 @@
 
     <!-- feature products section ended -->
     <!-- team section started -->
-    <section class="container max-w-6xl mx-auto my-20">
-        <div>
-            <img src="./images/banner1.png" alt="">
-        </div>
-        <div class="items-center text-white -mt-96">
-            <div class="text-center">
-                <h3 class="font-bold text-5xl">Meet the team section</h3>
-                <p class="text-sm w-96 font-normal mx-auto">Contrary to popular belief, is not simply random text. It
-                    has roots in a piece of classical Latin
-                    literature from 45 BC, making it over 2000 years old.</p>
-            </div>
-        </div>
-        <div class="flex justify-around mt-5  mx-auto ">
-            <div class="card card-compact  items-center text-white">
-                <figure><img src="./images/member1.png" alt=""></figure>
-                <h3 class="mt-3 text-lg font-bold">Awlad Hossain</h3>
-                <p>Fruits Expert</p>
-                <div class="">
-                    <ul class="flex gap-2">
-                        <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card card-compact  items-center text-white">
-                <figure><img src="./images/member2.png" alt=""></figure>
-                <h3 class="mt-3 text-lg font-bold">Safia Chowdhury</h3>
-                <p>Fruits Expert</p>
-                <div class="">
-                    <ul class="flex gap-2">
-                        <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card card-compact items-center  text-white">
-                <figure><img src="./images/member3.png" alt=""></figure>
-                <h3 class="mt-3 text-lg font-bold">Rokib Hossain</h3>
-                <p>Fruits Expert</p>
-                <div class="">
-                    <ul class="flex gap-2">
-                        <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card card-compact items-center text-white  ">
-                <figure><img src="./images/member4.png" alt=""></figure>
-                <h3 class="mt-3 text-lg font-bold">Chaity</h3>
-                <p>Fruits Expert</p>
-                <div class="">
-                    <ul class="flex gap-2">
-                        <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
+    <section class="p-10">
+        <div class="container max-w-6xl mx-auto my-20  flex-col lg:flex-row bg-cover "
+            style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md ">
+                    <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                    <p class="mb-5">Contrary to popular belief, is not simply random text. It
+                        has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                    <div class="flex justify-around gap-32 mt-5 flex-col lg:flex-row">
+                        <div class="card card-compact  items-center text-white">
+                            <figure><img class="" src="./images/member1.png" alt=""></figure>
+                            <h3 class="mt-3 text-lg font-bold">Awlad Hossain</h3>
+                            <p>Fruits Expert</p>
+                            <div class="">
+                                <ul class="flex gap-2">
+                                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card card-compact  items-center text-white">
+                            <figure><img src="./images/member2.png" alt=""></figure>
+                            <h3 class="mt-3 text-lg font-bold">Safia Chowdhury</h3>
+                            <p>Fruits Expert</p>
+                            <div class="">
+                                <ul class="flex gap-2">
+                                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card card-compact items-center  text-white">
+                            <figure><img src="./images/member3.png" alt=""></figure>
+                            <h3 class="mt-3 text-lg font-bold">Rokib Hossain</h3>
+                            <p>Fruits Expert</p>
+                            <div class="">
+                                <ul class="flex gap-2">
+                                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card card-compact items-center text-white  ">
+                            <figure><img src="./images/member4.png" alt=""></figure>
+                            <h3 class="mt-3 text-lg font-bold">Chaity</h3>
+                            <p>Fruits Expert</p>
+                            <div class="">
+                                <ul class="flex gap-2">
+                                    <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -392,14 +385,14 @@
     <!-- team section ended -->
 
     <!--why choose section started -->
-    <section class="container max-w-6xl mx-auto my-20">
+    <section class="container max-w-6xl mx-auto my-20 flex-col lg:flex-row">
         <div class="text-center">
             <h3 class="text-3xl font-bold">Why Choose Us</h3>
             <p class="text-sm font-normal m-8">Contrary to popular belief, is not simply random text. It has roots in a
                 piece of classical Latin
                 literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="flex gap-10">
+        <div class="flex gap-10 flex-col lg:flex-row p-20">
             <div>
                 <div class="flex items-center gap-5 mb-3">
                     <div class="bg-slate-300 w-10 h-10 rounded-full">
@@ -489,7 +482,7 @@
     <!--why choose section ended -->
 </main>
 <!-- footer secton started -->
-<footer class="footer footer-center p-10 bg-black text-primary-content">
+<footer class="footer footer-center p-10 bg-black text-primary-content flex-col lg:flex-row">
     <div class="flex items-center gap-3 text-white">
         <img src="./images/logo.png" alt="">
         <h3 class="font-semibold text-2xl">Fruit Brust</h3>
